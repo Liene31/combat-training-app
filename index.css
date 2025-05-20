@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
   color: #343738;
-
   font-family: "Open Sans", sans-serif;
 }
 
@@ -29,10 +28,21 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
 .join-callout {
   text-transform: uppercase;
   font-weight: 900;
   color: #d24133;
+  font-size: 1rem;
+}
+
+p {
+  text-align: center;
+  font-size: 0.9em;
 }
 
 header {
@@ -48,5 +58,11 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+}
+
+img {
+  width: 120px;
+  border-radius: 50%;
+  margin: 1.875em 0;
 }
