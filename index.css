@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #343738;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Typography */
+
+h1,
+h2 {
+  color: #fff;
+  text-shadow: black 1px 1px 1px;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.join-callout {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #d24133;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(images/flames.jpg);
+  background-size: cover;
+  height: 350px;
+  opacity: 0.8;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
