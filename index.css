@@ -13,10 +13,10 @@ body {
 /* Typography */
 
 h1,
-h2 {
+h2,
+.top-text {
   color: #fff;
   text-shadow: black 1px 1px 1px;
-
   font-family: "Source Code Pro", monospace;
 }
 
@@ -25,16 +25,24 @@ h1 {
 }
 
 h2,
-.join-callout {
+.top-text,
+.join-callout,
+button {
   text-transform: uppercase;
 }
 
-h2 {
+h2,
+.top-text {
   font-size: 0.9rem;
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  margin: 0;
 }
 
 h3 {
-  margin: 0;
   font-size: 1.2rem;
 }
 
@@ -46,6 +54,8 @@ h3 {
 
 p {
   font-size: 0.9em;
+  line-height: 1.5;
+  max-width: 500px;
 }
 
 header,
@@ -56,11 +66,17 @@ main {
 }
 
 header {
-  justify-content: center;
+  justify-content: space-between;
   background-image: url(images/flames.jpg);
   background-size: cover;
   min-height: 250px;
   opacity: 0.8;
+}
+
+.top-text {
+  order: -1;
+  border-top: 4px solid #fff;
+  margin: 0 auto;
 }
 
 main {
@@ -71,4 +87,58 @@ img {
   width: 120px;
   border-radius: 50%;
   margin: 1.875em 0;
+}
+
+form,
+input,
+button {
+  max-width: 350px;
+  width: 100%;
+}
+
+input {
+  font-family: inherit;
+  display: block;
+  margin-bottom: 0.938em;
+  padding: 0.313em;
+  border-radius: 3px;
+  border: 1.5px solid #343738;
+}
+
+button {
+  font-family: inherit;
+  padding: 0.55em;
+  background-color: #d24133;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.sub-text {
+  font-size: 10px;
+  margin-bottom: 1.875em;
+}
+
+/* Media queries */
+
+@media (min-width: 600px) {
+  body {
+    display: flex;
+  }
+
+  header,
+  main {
+    width: 50%;
+  }
+
+  header {
+    min-height: 100vh;
+  }
+
+  main {
+    justify-content: center;
+  }
 }
